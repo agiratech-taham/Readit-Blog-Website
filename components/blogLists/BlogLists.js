@@ -10,6 +10,9 @@ import Img6 from '../../assets/image_6.jpg.webp';
 import Img7 from '../../assets/image_7.jpg.webp';
 import Img8 from '../../assets/image_8.jpg.webp';
 import Img9 from '../../assets/image_9.jpg.webp';
+import Icons from "../icons/Icons";
+import {AiOutlineTwitter, AiOutlineInstagram} from "react-icons/ai"
+import {FaFacebookF} from "react-icons/fa"
 
 const BlogLists = () => {
   const posts = [
@@ -17,54 +20,63 @@ const BlogLists = () => {
       id: 1,
       title: "Build a website in minutes with Adobe Templates",
       desc: "ILLUSTRATION",
+      desc2: "11/13/2019 | 12 min read",
       img: Img1,
     },
     {
       id: 2,
       title: "Build a website in minutes with Adobe Templates",
       desc: "ILLUSTRATION",
+      desc2: "11/13/2019 | 12 min read",
       img: Img2,
     },
     {
       id: 3,
       title: "Build a website in minutes with Adobe Templates",
       desc: "ILLUSTRATION",
+      desc2: "11/13/2019 | 12 min read",
       img: Img3,
     },
     {
       id: 4,
       title: "Build a website in minutes with Adobe Templates",
       desc: "ILLUSTRATION",
+      desc2: "11/13/2019 | 12 min read",
       img: Img4,
     },
     {
       id: 5,
       title: "Build a website in minutes with Adobe Templates",
       desc: "ILLUSTRATION",
+      desc2: "11/13/2019 | 12 min read",
       img: Img5,
     },
     {
       id: 6,
       title: "Build a website in minutes with Adobe Templates",
       desc: "ILLUSTRATION",
+      desc2: "11/13/2019 | 12 min read",
       img: Img6,
     },
     {
       id: 7,
       title: "Build a website in minutes with Adobe Templates",
       desc: "ILLUSTRATION",
+      desc2: "11/13/2019 | 12 min read",
       img: Img7,
     },
     {
       id: 8,
       title: "Build a website in minutes with Adobe Templates",
       desc: "ILLUSTRATION",
+      desc2: "11/13/2019 | 12 min read",
       img: Img8,
     },
     {
       id: 9,
       title: "Build a website in minutes with Adobe Templates",
       desc: "ILLUSTRATION",
+      desc2: "11/13/2019 | 12 min read",
       img: Img9,
     },
   ];
@@ -85,7 +97,30 @@ const BlogLists = () => {
               <div className="content">
                 <p>{getText(post.desc)}</p>
                 <h1>{post.title}</h1>
-                <p>{getText(post.desc)}</p>
+                <ul className="media-social list-unstyled ">
+                  <li className="ftco-animate fadeInUp ftco-animated">
+                    <a>
+                      <span>
+                      <AiOutlineTwitter/>
+                      </span>
+                    </a>
+                  </li>
+                  <li className="ftco-animate fadeInUp ftco-animated">
+                    <a>
+                      <span>
+                      <FaFacebookF/>
+                      </span>
+                    </a>
+                  </li>
+                  <li className="ftco-animate fadeInUp ftco-animated">
+                    <a>
+                    <span>
+                      <AiOutlineInstagram/>
+                    </span>
+                    </a>
+                  </li>
+              </ul>
+                <p className="para2">{getText(post.desc2)}</p>
               </div>
             </div>
           ))}

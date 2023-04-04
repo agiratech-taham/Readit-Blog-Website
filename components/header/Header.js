@@ -31,7 +31,7 @@ const Header = () => {
             className={color ? "navbar-logo-scroll" : "navbar-logo"}
             onClick={closeMobileMenu}
           >
-            Read <i style={{ fontStyle: "normal", color: "#ffd369" }}>it</i>
+            Read <i style={{ fontStyle: "normal", color: "#ffd369" }}>it</i>.
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             {click ? <FaTimes /> : <FaBars />}

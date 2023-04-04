@@ -1,14 +1,19 @@
 import React from 'react'
 import BlogLists from '../../components/blogLists/BlogLists'
 import Header from '../../components/header/Header'
-import OverLay from '../../components/overlay/OverLay'
+import Footer from '../../components/footer/Footer'
+
+import HomeBanner from '../../components/homeBanner/HomeBanner'
+import BasicPagination from '../../components/pagination/Pagination'
 
 const Home = () => {
   return (
     <div>
         <Header/>
-        <OverLay/>
+        <HomeBanner/>
         <BlogLists/>
+        <BasicPagination/>
+        <Footer/>
     </div>
   )
 }
